@@ -46,7 +46,7 @@ php artisan jwt:secret
 
 Setelah dijalankan di file .env akan ditambahkan hasil seperti 
 
-``JWT_SECRET=key_jwt``
+```JWT_SECRET=key_jwt```
 
 Selanjutnya Konfigurasi config/auth 'Guard'
 
@@ -63,3 +63,4 @@ php artisan make:controller Api/RegisterController -i
 ```
 php artisan make:controller Api/LoginController
 ```
+
