@@ -58,3 +58,8 @@ dan App/models/user.php
 php artisan make:controller Api/RegisterController -i
 ```
 
+- Buat Login Controller
+
+```
+php artisan make:controller Api/LoginController
+```
