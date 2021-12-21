@@ -30,6 +30,9 @@ JWT Merupakan perangkat lunak yang digunakan untuk membuat API Token berbentuk J
 -Instalasi
 
 ```
-composer require tymon/jwt-auth:^1.0
+composer require -w tymon/jwt-auth --ignore-platform-reqs
 ```
+
+Kemudian melakukan publish konfigurasi 
+
 
