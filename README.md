@@ -35,4 +35,19 @@ composer require -w tymon/jwt-auth --ignore-platform-reqs
 
 Kemudian melakukan publish konfigurasi 
 
+```
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+```
+Membuat secret key JWT
 
+```
+php artisan jwt:secret
+```
+
+Setelah dijalankan di file .env akan ditambahkan hasil seperti 
+
+``JWT_SECRET=key_jwt``
+
+Selanjutnya Konfigurasi config/auth 'Guard'
+
+dan App/models/user.php
