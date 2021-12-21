@@ -24,3 +24,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## STEP
 
 - Proses instalasi dan konfigurasi JWT atau JASON WEB TOKEN di dalam project Laravel
+
+JWT Merupakan perangkat lunak yang digunakan untuk membuat API Token berbentuk JSON yang sudah di enksipsi dengan sebuah algoritma , Token yang di generate akan digunakan untuk bertukar informasi antar aplikasi dengan aman 
+
+-Instalasi
+
+```composer require tymon/jwt-auth:^1.0```
+
