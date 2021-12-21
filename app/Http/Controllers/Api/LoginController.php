@@ -30,6 +30,27 @@ class LoginController extends Controller
             return response()->json($validator->errors(),422);
          } 
 
+        // Mendapatkan credensial dari request 
 
+        $credentials = $request->only('email','password');
+
+
+        // jika auth gagal
+
+        if (!$token = JWTAuth::attempt($credentials)) {
+            # code...
+            return response()->json([
+                'success' => false,
+                'message' => 'Email atau password salah'
+            ]);
+        }
+
+        // Jika auth berhasil
+
+        return response()->json([
+            'success' => true,
+            'user' => auth()->user(),
+            'token' => $token
+        ],200);
     }
 }
