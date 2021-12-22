@@ -66,4 +66,9 @@ php artisan make:controller Api/LoginController
 
 ## STEP 2
 
--Buat Project React.js
+-Buat Project React.js dan jalan kan project tersebut
+-Kemudian konfiurasi Router dengan menggunakan library react-dom 
+-install React-Router-Dom
+```
+npm install react-router-dom
+```
