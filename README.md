@@ -64,3 +64,6 @@ php artisan make:controller Api/RegisterController -i
 php artisan make:controller Api/LoginController
 ```
 
+## STEP 2
+
+-Buat Project React.js
